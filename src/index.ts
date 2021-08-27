@@ -135,3 +135,19 @@ class Stack<T>{
 const s=new Stack<number>;
 const s2=new Stack<string>; 
     
+
+interface itf{
+    func1():string;
+    func2():number;
+}
+
+abstract class vehicle{
+    name:string;
+    color:string;
+    constructor(name:string,color:string){
+        this.name=name;
+        this.color=color;
+        }
+
+    abstract introduce():void
+} 
