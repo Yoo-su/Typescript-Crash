@@ -136,6 +136,9 @@ const s=new Stack<number>;
 const s2=new Stack<string>; 
     
 
+//interface와 abstract 클래스의 용도 차이를 정리하면
+//interface는 개발자간 협업 개발 시 각 기능을 나눠 구현하기 위해 사용한다.
+//abstract 클래스는 일반 클래스와 마찬가지로 프로그램 전체 구조를 짜기 위해 사용하는데, 추상 메소드를 통해 반드시 구현할 기능을 정의한다. 
 interface itf{
     func1():string;
     func2():number;
