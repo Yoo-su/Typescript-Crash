@@ -120,3 +120,18 @@ let numArray=getArray<number>([1,2,3,4]);
 let strArray=getArray<string>(['brad','Jogn','Kim']);
 
 numArray.push(5)
+
+
+//any와 generic 사용 시 유념할 점. 
+//예를 들면 Stack 클래스를 만든다고 할 때, 리스트가 가질 수 있는 값을 any[] 와 같이 지정할 경우
+//[1,'1',true] 와 같이 모든 값을 다 갖는 배열이 생길 수 있다. 그래서 이럴 때 generic을 사용해야 한다.
+class Stack<T>{
+    stack:<T>[];
+
+    constructer(){}
+}
+
+//이제 이런식으로 사용할 수 있다. 
+const s=new Stack<number>;
+const s2=new Stack<string>; 
+    
